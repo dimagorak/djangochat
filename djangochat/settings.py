@@ -21,10 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['djangochat_secret_key']
-
+# SECRET_KEY = 'b9r!y7loml1zcr7pw+ounb12g%yb(!pi8bha9q-&#4yw2yw$uc'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'b9r!y7loml1zcr7pw+ounb12g%yb(!pi8bha9q-&#4yw2yw$uc')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
 ALLOWED_HOSTS = []
 
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'djangochat.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,15 +84,13 @@ WSGI_APPLICATION = 'djangochat.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ['djangochat_db_name'],
-        'USER': os.environ['djangochat_db_user'],
-        'PASSWORD': os.environ['djangochat_db_password'],
+        'NAME': 'djangochat',
+        'USER': 'djangochatuser',
+        'PASSWORD': '12345',
         'HOST': 'localhost',
-        'PORT': '',
-        'CONN_MAX_AGE' : 60
+        'PORT': 5432,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -115,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 
@@ -138,9 +137,8 @@ LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'postmarker.django.EmailBackend'
-
 POSTMARK = {
-    'TOKEN': os.environ['djangochat_postmark_token'],
+    'TOKEN': '|c8|ump-]d}6Q°@uqiJ%]{ahzUHlE8s)>,rrx+FVeLt?l§T_gBoE.i!4oqdLq:a[',
     'TEST_MODE': False,
 }
 
