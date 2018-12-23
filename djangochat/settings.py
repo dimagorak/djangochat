@@ -149,15 +149,15 @@ POSTMARK = {
     'TEST_MODE': False,
 }
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "redis_cache.RedisCache",
-        "CONFIG": {
-            "hosts": [os.environ.get('REDIS_URL', '9219')],
-        },
-        "ROUTING": "chatdemo.routing.channel_routing",
-    },
-}
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "redis_cache.RedisCache",
+#         "CONFIG": {
+#             "hosts": [os.environ.get('REDIS_URL', '9219')],
+#         },
+#         "ROUTING": "chatdemo.routing.channel_routing",
+#     },
+# }
 redis_url = urlparse(os.environ.get('REDISCLOUD_URL'))
 CACHES = {
         'default': {

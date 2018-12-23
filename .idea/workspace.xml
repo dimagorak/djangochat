@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b180b23-38a3-401f-af9d-fa684ce34d4e" name="Default Changelist" comment="" />
+    <list default="true" id="4b180b23-38a3-401f-af9d-fa684ce34d4e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/djangochat/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangochat/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,12 +18,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="139" column="6" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
+            <state relative-caret-position="195">
+              <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
               <folding>
                 <element signature="e#314#323#0" expanded="true" />
-                <marker date="1545599778498" expanded="true" signature="4114:4424" ph="..." />
-                <marker date="1545599778498" expanded="true" signature="4776:4967" ph="..." />
+                <marker date="1545600164392" expanded="true" signature="4114:4349" ph="..." />
+                <marker date="1545600164392" expanded="true" signature="5025:5216" ph="..." />
               </folding>
             </state>
           </provider>
@@ -146,12 +148,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545575788800</updated>
-      <workItem from="1545575799467" duration="15861000" />
+      <workItem from="1545575799467" duration="16110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15861000" />
+    <option name="totallyTimeSpent" value="16110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -340,12 +342,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="139" column="6" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
+        <state relative-caret-position="195">
+          <caret line="166" column="22" selection-start-line="166" selection-start-column="22" selection-end-line="166" selection-end-column="22" />
           <folding>
             <element signature="e#314#323#0" expanded="true" />
-            <marker date="1545599778498" expanded="true" signature="4114:4424" ph="..." />
-            <marker date="1545599778498" expanded="true" signature="4776:4967" ph="..." />
+            <marker date="1545600164392" expanded="true" signature="4114:4349" ph="..." />
+            <marker date="1545600164392" expanded="true" signature="5025:5216" ph="..." />
           </folding>
         </state>
       </provider>
