@@ -14,7 +14,7 @@ import os
 from datetime import timedelta
 import django_heroku
 import dj_database_url
-
+import urlparse
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -148,13 +148,25 @@ POSTMARK = {
     'TEST_MODE': False,
 }
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "asgi_redis.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
-        },
-        "ROUTING": "chatdemo.routing.channel_routing",
-    },
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "asgi_redis.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
+#         },
+#         "ROUTING": "chatdemo.routing.channel_routing",
+#     },
+# }
+redis_url = urlparse.urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:9219'))
+
+CACHES = {
+    'default': {
+        'BACKEND': 'redis_cache.RedisCache',
+        'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
+        'OPTIONS': {
+            'DB': 1,
+            'PASSWORD': redis_url.password,
+        }
+    }
 }
 django_heroku.settings(locals())
