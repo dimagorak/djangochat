@@ -149,15 +149,15 @@ POSTMARK = {
     'TEST_MODE': False,
 }
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "asgi_redis.RedisChannelLayer",
-#         "CONFIG": {
-#             "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],
-#         },
-#         "ROUTING": "chatdemo.routing.channel_routing",
-#     },
-# }
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [os.environ.get('REDIS_URL', 'redis://redistogo:7e56c34221f5a8475469d366fb7127fd@crestfish.redistogo.com:9219')],
+        },
+        "ROUTING": "chatdemo.routing.channel_routing",
+    },
+}
 # redis_url = urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:9219'))
 #
 # CACHES = {
@@ -170,11 +170,11 @@ POSTMARK = {
 #         }
 #     }
 # }
-r = redis.from_url(os.environ.get("REDIS_URL"))
-CACHES = {
-    "default": {
-         "BACKEND": "redis_cache.RedisCache",
-         "LOCATION": os.environ.get('REDIS_URL'),
-    }
-}
+# r = redis.from_url(os.environ.get("REDIS_URL"))
+# CACHES = {
+#     "default": {
+#          "BACKEND": "redis_cache.RedisCache",
+#          "LOCATION": os.environ.get('REDIS_URL'),
+#     }
+# }
 django_heroku.settings(locals())
