@@ -87,10 +87,10 @@ WSGI_APPLICATION = 'djangochat.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'djangochat',
-        'USER': 'djangochatuser',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',
+        'NAME': 'd5a5cbbt4qiqsk',
+        'USER': 'qvpojhochtlvoz',
+        'PASSWORD': 'c60e18a6870300911a97200c3023c0f386b1a012a122b027f1f30e1f6bc9791e',
+        'HOST': 'ec2-54-235-169-191.compute-1.amazonaws.com',
         'PORT': 5432,
     }
 }
