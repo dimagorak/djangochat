@@ -158,6 +158,17 @@ CHANNEL_LAYERS = {
         "ROUTING": "chatdemo.routing.channel_routing",
     },
 }
+redis_url = urlparse(os.environ.get('REDISCLOUD_URL'))
+CACHES = {
+        'default': {
+            'BACKEND': 'redis_cache.RedisCache',
+            'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
+            'OPTIONS': {
+                'PASSWORD': redis_url.password,
+                'DB': 0,
+        }
+    }
+}
 # redis_url = urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:9219'))
 #
 # CACHES = {
