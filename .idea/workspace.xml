@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b180b23-38a3-401f-af9d-fa684ce34d4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/djangochat/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangochat/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangochat/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangochat/asgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,25 +15,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2841">
-              <caret line="179" column="3" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
+            <state relative-caret-position="106">
+              <caret line="154" column="48" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="48" />
               <folding>
                 <element signature="e#314#323#0" expanded="true" />
-                <marker date="1545601481830" expanded="true" signature="4117:4368" ph="..." />
-                <marker date="1545601481830" expanded="true" signature="4720:4911" ph="..." />
+                <marker date="1545601572678" expanded="true" signature="4377:4378" ph="..." />
+                <marker date="1545601572678" expanded="true" signature="4730:4921" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/djangochat/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#227#236#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
+              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/djangochat/asgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/channels/asgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -49,6 +82,7 @@
         <option value="$PROJECT_DIR$/djangochat/wsgi.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/djangochat/settings.py" />
+        <option value="$PROJECT_DIR$/djangochat/asgi.py" />
       </list>
     </option>
   </component>
@@ -74,6 +108,58 @@
               <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangochat" type="462c0819:PsiDirectoryNode" />
               <item name="djangochat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (djangochat) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (djangochat) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (djangochat) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (djangochat) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (djangochat) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Lib" type="462c0819:PsiDirectoryNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="asgi_redis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (djangochat) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (djangochat) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
+              <item name="asgi_redis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -136,23 +222,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545575788800</updated>
-      <workItem from="1545575799467" duration="17407000" />
+      <workItem from="1545575799467" duration="17897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17407000" />
+    <option name="totallyTimeSpent" value="17897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2234957" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2234957" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49928367" visible="true" weight="0.32974428" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49928367" visible="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5007163" side_tool="true" weight="0.32974428" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Python Console" order="5" weight="0.32974428" />
@@ -303,11 +389,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/channels/asgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/djangochat/asgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="154" column="48" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="48" />
+          <folding>
+            <element signature="e#314#323#0" expanded="true" />
+            <marker date="1545601572678" expanded="true" signature="4377:4378" ph="..." />
+            <marker date="1545601572678" expanded="true" signature="4730:4921" ph="..." />
           </folding>
         </state>
       </provider>
@@ -315,7 +421,7 @@
     <entry file="file://$PROJECT_DIR$/djangochat/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#227#236#0" expanded="true" />
           </folding>
@@ -325,19 +431,7 @@
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2841">
-          <caret line="179" column="3" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
-          <folding>
-            <element signature="e#314#323#0" expanded="true" />
-            <marker date="1545601481830" expanded="true" signature="4117:4368" ph="..." />
-            <marker date="1545601481830" expanded="true" signature="4720:4911" ph="..." />
-          </folding>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
