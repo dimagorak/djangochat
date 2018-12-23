@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 from datetime import timedelta
+import django_heroku
+import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -132,6 +135,9 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+dj_from_env = dj_database_url.config()
+DATABASES['default'].update(dj_from_env)
+
 LOGIN_URL = '/login/'
 
 LOGIN_REDIRECT_URL = '/'
@@ -151,3 +157,4 @@ CHANNEL_LAYERS = {
         "ROUTING": "chatdemo.routing.channel_routing",
     },
 }
+django_heroku.settings(locals())

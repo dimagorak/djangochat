@@ -15,4 +15,4 @@ from whitenoise.django import DjangoWhiteNoise
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "djangochat.settings")
 
 application = get_wsgi_application()
-application = WhiteNoise(application)
+application = DjangoWhiteNoise(application)
