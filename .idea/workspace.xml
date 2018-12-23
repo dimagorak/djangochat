@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b180b23-38a3-401f-af9d-fa684ce34d4e" name="Default Changelist" comment="" />
+    <list default="true" id="4b180b23-38a3-401f-af9d-fa684ce34d4e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/djangochat/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangochat/settings.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,21 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="159" column="3" lean-forward="true" selection-start-line="159" selection-start-column="3" selection-end-line="159" selection-end-column="3" />
+            <state relative-caret-position="2841">
+              <caret line="179" column="3" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
               <folding>
                 <element signature="e#314#323#0" expanded="true" />
-                <marker date="1545600394680" expanded="true" signature="4116:4367" ph="..." />
-                <marker date="1545600394680" expanded="true" signature="5043:5234" ph="..." />
+                <marker date="1545601481830" expanded="true" signature="4117:4368" ph="..." />
+                <marker date="1545601481830" expanded="true" signature="4720:4911" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -134,15 +136,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545575788800</updated>
-      <workItem from="1545575799467" duration="16615000" />
+      <workItem from="1545575799467" duration="17407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16615000" />
+    <option name="totallyTimeSpent" value="17407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2234957" />
@@ -300,18 +303,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="159" column="3" lean-forward="true" selection-start-line="159" selection-start-column="3" selection-end-line="159" selection-end-column="3" />
-          <folding>
-            <element signature="e#314#323#0" expanded="true" />
-            <marker date="1545600394680" expanded="true" signature="4116:4367" ph="..." />
-            <marker date="1545600394680" expanded="true" signature="5043:5234" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/djangochat/asgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -335,6 +326,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2841">
+          <caret line="179" column="3" lean-forward="true" selection-start-line="179" selection-start-column="3" selection-end-line="179" selection-end-column="3" />
+          <folding>
+            <element signature="e#314#323#0" expanded="true" />
+            <marker date="1545601481830" expanded="true" signature="4117:4368" ph="..." />
+            <marker date="1545601481830" expanded="true" signature="4720:4911" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

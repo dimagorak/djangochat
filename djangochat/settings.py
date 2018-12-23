@@ -17,6 +17,7 @@ import dj_database_url
 from urllib.parse import urlparse
 import redis
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -134,7 +135,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 dj_from_env = dj_database_url.config()
 DATABASES['default'].update(dj_from_env)
@@ -149,32 +150,52 @@ POSTMARK = {
     'TEST_MODE': False,
 }
 
-# CHANNEL_LAYERS = {
-#     "default": {
-#         "BACKEND": "redis_cache.RedisCache",
-#         "CONFIG": {
-#             "hosts": [os.environ.get('REDIS_URL', '9219')],
-#         },
-#         "ROUTING": "chatdemo.routing.channel_routing",
-#     },
-# }
-redis_url = urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:6959'))
-
-CACHES = {
-    'default': {
-        'BACKEND': 'redis_cache.RedisCache',
-        'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
-        'OPTIONS': {
-            'DB': 0,
-            'PASSWORD': redis_url.password,
-        }
-    }
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "CONFIG": {
+            "hosts": [os.environ.get('REDISTOGO_URL', 'redis://localhost:6379')],
+        },
+        "ROUTING": "chatdemo.routing.channel_routing",
+    },
 }
+# redis_url = urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:6959'))
+#
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'redis_cache.RedisCache',
+#         'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
+#         'OPTIONS': {
+#             'DB': 0,
+#             'PASSWORD': redis_url.password,
+#         }
+#     }
+# }
 # r = redis.from_url(os.environ.get("REDIS_URL"))
 # CACHES = {
 #     "default": {
 #          "BACKEND": "redis_cache.RedisCache",
 #          "LOCATION": os.environ.get('REDIS_URL'),
+#     }
+# }
+# CHANNEL_LAYERS = {
+#     "default": {
+#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "CONFIG": {
+#             "hosts": ["redis://redistogo:7e56c34221f5a8475469d366fb7127fd@crestfish.redistogo.com:9219"],
+#         },
+#     },
+# }
+# redis_url = urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:6959'))
+#
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'redis_cache.RedisCache',
+#         'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
+#         'OPTIONS': {
+#             'DB': 0,
+#             'PASSWORD': redis_url.password,
+#         }
 #     }
 # }
 django_heroku.settings(locals())
