@@ -30,7 +30,6 @@ pip==18.1
 postmarker==0.11.2
 psycopg2==2.7.4
 pytz==2017.2
-pypiwin32==223
 redis==2.10.5
 requests==2.17.3
 six==1.10.0
