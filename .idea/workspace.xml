@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b180b23-38a3-401f-af9d-fa684ce34d4e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/djangochat/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangochat/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="4b180b23-38a3-401f-af9d-fa684ce34d4e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +17,11 @@
         <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="178">
-              <caret line="155" column="68" selection-start-line="155" selection-start-column="59" selection-end-line="155" selection-end-column="68" />
+              <caret line="155" column="46" lean-forward="true" selection-start-line="155" selection-start-column="46" selection-end-line="155" selection-end-column="46" />
               <folding>
                 <element signature="e#314#323#0" expanded="true" />
-                <marker date="1545599290266" expanded="true" signature="4114:4373" ph="..." />
-                <marker date="1545599290266" expanded="true" signature="4725:4916" ph="..." />
+                <marker date="1545599374990" expanded="true" signature="4114:4430" ph="..." />
+                <marker date="1545599374990" expanded="true" signature="4782:4973" ph="..." />
               </folding>
             </state>
           </provider>
@@ -64,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="945" />
     <option name="width" value="502" />
     <option name="height" value="846" />
@@ -86,17 +84,6 @@
               <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
               <item name="djangochat" type="462c0819:PsiDirectoryNode" />
               <item name="djangochat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangochat" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="djangochat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="djangochat" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="chatdemo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,16 +146,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545575788800</updated>
-      <workItem from="1545575799467" duration="15300000" />
+      <workItem from="1545575799467" duration="15560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15300000" />
+    <option name="totallyTimeSpent" value="15560000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2234957" />
@@ -355,11 +341,11 @@
     <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
-          <caret line="155" column="68" selection-start-line="155" selection-start-column="59" selection-end-line="155" selection-end-column="68" />
+          <caret line="155" column="46" lean-forward="true" selection-start-line="155" selection-start-column="46" selection-end-line="155" selection-end-column="46" />
           <folding>
             <element signature="e#314#323#0" expanded="true" />
-            <marker date="1545599290266" expanded="true" signature="4114:4373" ph="..." />
-            <marker date="1545599290266" expanded="true" signature="4725:4916" ph="..." />
+            <marker date="1545599374990" expanded="true" signature="4114:4430" ph="..." />
+            <marker date="1545599374990" expanded="true" signature="4782:4973" ph="..." />
           </folding>
         </state>
       </provider>

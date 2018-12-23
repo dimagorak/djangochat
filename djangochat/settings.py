@@ -151,7 +151,7 @@ POSTMARK = {
 
 CHANNEL_LAYERS = {
     "default": {
-        "BACKEND": "asgi_redis.RedisChannelLayer",
+        "BACKEND": "redis_cache.RedisCache",
         "CONFIG": {
             "hosts": [os.environ.get('REDIS_URL', 'redis://redistogo:7e56c34221f5a8475469d366fb7127fd@crestfish.redistogo.com:9219')],
         },
