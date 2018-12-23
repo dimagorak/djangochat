@@ -153,7 +153,7 @@ CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "redis_cache.RedisCache",
         "CONFIG": {
-            "hosts": [os.environ.get('REDIS_URL', 'redis://redistogo:7e56c34221f5a8475469d366fb7127fd@crestfish.redistogo.com:9219')],
+            "hosts": [os.environ.get('REDIS_URL', '9219')],
         },
         "ROUTING": "chatdemo.routing.channel_routing",
     },

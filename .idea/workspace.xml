@@ -16,12 +16,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="155" column="46" lean-forward="true" selection-start-line="155" selection-start-column="46" selection-end-line="155" selection-end-column="46" />
+            <state relative-caret-position="25">
+              <caret line="139" column="6" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
               <folding>
                 <element signature="e#314#323#0" expanded="true" />
-                <marker date="1545599374990" expanded="true" signature="4114:4430" ph="..." />
-                <marker date="1545599374990" expanded="true" signature="4782:4973" ph="..." />
+                <marker date="1545599778498" expanded="true" signature="4114:4424" ph="..." />
+                <marker date="1545599778498" expanded="true" signature="4776:4967" ph="..." />
               </folding>
             </state>
           </provider>
@@ -62,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="945" />
     <option name="width" value="502" />
     <option name="height" value="846" />
@@ -146,15 +146,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545575788800</updated>
-      <workItem from="1545575799467" duration="15560000" />
+      <workItem from="1545575799467" duration="15861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15560000" />
+    <option name="totallyTimeSpent" value="15861000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2234957" />
@@ -340,12 +340,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/djangochat/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="155" column="46" lean-forward="true" selection-start-line="155" selection-start-column="46" selection-end-line="155" selection-end-column="46" />
+        <state relative-caret-position="25">
+          <caret line="139" column="6" selection-start-line="139" selection-start-column="6" selection-end-line="139" selection-end-column="6" />
           <folding>
             <element signature="e#314#323#0" expanded="true" />
-            <marker date="1545599374990" expanded="true" signature="4114:4430" ph="..." />
-            <marker date="1545599374990" expanded="true" signature="4782:4973" ph="..." />
+            <marker date="1545599778498" expanded="true" signature="4114:4424" ph="..." />
+            <marker date="1545599778498" expanded="true" signature="4776:4967" ph="..." />
           </folding>
         </state>
       </provider>
