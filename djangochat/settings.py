@@ -39,6 +39,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'chatdemo.apps.ChatdemoConfig',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -133,9 +134,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 dj_from_env = dj_database_url.config()
 DATABASES['default'].update(dj_from_env)
@@ -149,14 +153,13 @@ POSTMARK = {
     'TOKEN': '|c8|ump-]d}6Q°@uqiJ%]{ahzUHlE8s)>,rrx+FVeLt?l§T_gBoE.i!4oqdLq:a[',
     'TEST_MODE': False,
 }
-
 CHANNEL_LAYERS = {
     "default": {
         "BACKEND": "asgi_redis.RedisChannelLayer",
-        "CONFIG": {
-            "hosts": [os.environ.get('REDISTOGO_URL', 'redis://localhost:6379')],
-        },
         "ROUTING": "chatdemo.routing.channel_routing",
+        "CONFIG": {
+            "hosts": ["redis://redistogo:7e56c34221f5a8475469d366fb7127fd@crestfish.redistogo.com:9219/"],
+        },
     },
 }
 # redis_url = urlparse(os.environ.get('REDISTOGO_URL', 'redis://localhost:6959'))
@@ -180,9 +183,9 @@ CHANNEL_LAYERS = {
 # }
 # CHANNEL_LAYERS = {
 #     "default": {
-#         "BACKEND": "channels_redis.core.RedisChannelLayer",
+#         "BACKEND": "redis_cache.RedisCache",
 #         "CONFIG": {
-#             "hosts": ["redis://redistogo:7e56c34221f5a8475469d366fb7127fd@crestfish.redistogo.com:9219"],
+#             "hosts": [os.environ.get('REDIS_URL', 'ec2-54-235-169-191.compute-1.amazonaws.com')],
 #         },
 #     },
 # }
@@ -193,9 +196,10 @@ CHANNEL_LAYERS = {
 #         'BACKEND': 'redis_cache.RedisCache',
 #         'LOCATION': '%s:%s' % (redis_url.hostname, redis_url.port),
 #         'OPTIONS': {
-#             'DB': 0,
+#             'DB': 1,
 #             'PASSWORD': redis_url.password,
 #         }
 #     }
 # }
 django_heroku.settings(locals())
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
